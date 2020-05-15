@@ -17,7 +17,7 @@ html {
 .box {
   padding: 2px;
 }
-section {
+.features_section {
   padding: 80px;
 }
 header {
@@ -137,7 +137,7 @@ h3 {
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 .col-text {
   line-height: 140%;
@@ -147,4 +147,30 @@ h3 {
 .icon {
   color: #e67e22;
   font-size: 150%;
+}
+.meals-list {
+  list-style: none;
+  width: 100%;
+}
+.meals-list li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+.meals-image {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+.meals-image img {
+  width: 100%;
+  opacity: 0.7;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s opacity 0.5s;
+}
+.meals-image img:hover {
+  transform: scale(1.03);
+  opacity: 1;
 }
