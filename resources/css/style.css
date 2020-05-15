@@ -10,6 +10,16 @@ html {
   font-family: "Lato", "Arial", "sans-serif";
   text-rendering: optimizeLegibility;
 }
+.clearfix{
+  zoom:1;
+}
+.clearfix:after{
+  content:'.';
+  clear:both;
+  display:block;
+  height:0;
+  visibility:hidden;
+}
 .row {
   margin: 0 auto 0 auto;
   max-width: 1140px;
@@ -173,4 +183,44 @@ h3 {
 .meals-image img:hover {
   transform: scale(1.03);
   opacity: 1;
+}
+.works{
+  padding:80px;
+  background-color: rgb(231, 231, 231);
+}
+.works-box {
+  margin-top: 20px;
+}
+.works-box:first-child {
+  text-align: right;
+  padding-right: 50px;
+}
+.works-box:last-child {
+  margin-top: 70px;
+  padding-left: 20px;
+}
+.works-box img {
+  width: 40%;
+}
+.steps {
+  margin-bottom: 50px;
+}
+.steps div {
+  color: #e67e22;
+  border: 1px solid #e67e22;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 150;
+  float: left;
+  margin-right: 20px;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 30px;
+  margin-top: 30px;
 }
