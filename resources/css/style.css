@@ -10,15 +10,15 @@ html {
   font-family: "Lato", "Arial", "sans-serif";
   text-rendering: optimizeLegibility;
 }
-.clearfix{
-  zoom:1;
+.clearfix {
+  zoom: 1;
 }
-.clearfix:after{
-  content:'.';
-  clear:both;
-  display:block;
-  height:0;
-  visibility:hidden;
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
 .row {
   margin: 0 auto 0 auto;
@@ -36,6 +36,7 @@ header {
   height: 100vh;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -184,8 +185,8 @@ h3 {
   transform: scale(1.03);
   opacity: 1;
 }
-.works{
-  padding:80px;
+.works {
+  padding: 80px;
   background-color: rgb(231, 231, 231);
 }
 .works-box {
@@ -223,4 +224,72 @@ h3 {
   width: auto;
   margin-right: 30px;
   margin-top: 30px;
+}
+.cities {
+  padding: 80px;
+}
+.city-info img {
+  width: 100%;
+  margin-bottom: 15px;
+  height: auto;
+}
+.city-feature {
+  font-size: 90%;
+  margin-bottom: 10px;
+}
+.city-feature ion-icon {
+  color: #e67e22;
+  font-size: 90%;
+  margin-right: 20px;
+  vertical-align: middle;
+  line-height: 120%;
+  margin-top: -4.5px;
+}
+.city-feature a:link,
+.city-feature a:visited {
+  text-decoration: none;
+  color: #e67e22;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.2s color 0.2s;
+}
+.city-feature a:hover,
+.city-feature a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+.testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/back-customers.jpg");
+  background-size: cover;
+  background-size: center;
+  padding: 80px;
+  color: #fff;
+  background-attachment: fixed;
+}
+blockquote {
+  padding: 5px;
+  font-style: italic;
+  line-height: 140%;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  position: relative;
+}
+blockquote:before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: -10px;
+}
+cite {
+  font-size: 90%;
+}
+cite img {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 20px;
 }
