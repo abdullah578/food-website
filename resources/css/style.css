@@ -237,7 +237,8 @@ h3 {
   font-size: 90%;
   margin-bottom: 10px;
 }
-.city-feature ion-icon {
+.city-feature ion-icon,
+.plan-specs ul li ion-icon {
   color: #e67e22;
   font-size: 90%;
   margin-right: 20px;
@@ -292,4 +293,39 @@ cite img {
   border-radius: 50%;
   vertical-align: middle;
   margin-right: 20px;
+}
+.plans {
+  background-color: rgb(231, 231, 231);
+}
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin: 0 5%;
+  box-shadow: 0 2px 2px rgb(241, 240, 240);
+}
+.plan-box div {
+  border-bottom: 1px solid rgb(243, 242, 242);
+  padding: 15px;
+}
+.plan-price p:first-of-type {
+  font-size: 300%;
+  font-weight: 100;
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+.plan-price p span {
+  font-size: 40%;
+  font-weight: 300;
+}
+
+.plan-specs ul {
+  list-style: none;
+}
+.plan-specs ul li {
+  padding: 5px;
+}
+.plan-box div:last-of-type {
+  text-align: center;
+  border: 0;
 }
