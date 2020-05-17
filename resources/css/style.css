@@ -352,6 +352,54 @@ textarea {
 textarea {
   height: 100px;
 }
-option{
-  font-weight:300;
+option {
+  font-weight: 300;
+}
+footer {
+  background-color: #333;
+  padding: 30px;
+}
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+.footer-nav li,
+.social-nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer-nav li a:link,
+.social-nav li a:link,
+.footer-nav li a:visited,
+.social-nav li a:visited {
+  color: #888;
+  text-decoration: none;
+  font-size: 90%;
+  transition: color 0.2s;
+}
+
+.footer-nav li a:active,
+.social-nav li a:active,
+.footer-nav li a:hover,
+.social-nav li a:hover {
+  color: #ddd;
+}
+
+.social-nav {
+  list-style: none;
+  float: right;
+}
+
+.fb,.insta,.google{
+  font-size: 120%;
+  transition:color 0.2s;
+}
+.fb:active,.fb:hover{
+  color:#1877f2
+}
+.insta:active,.insta:hover{
+  color:#c32aa3
+}
+.google:active,.google:hover{
+  color:#ea4335
 }
