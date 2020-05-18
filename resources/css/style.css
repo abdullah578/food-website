@@ -200,13 +200,13 @@ input[type="submit"]:hover {
 }
 .works-box:first-child {
   text-align: right;
-  padding-right: 50px;
+  padding-right: 3%;
 }
 .works-box:last-child {
   margin-top: 70px;
-  padding-left: 20px;
+  padding-left: 3%;
 }
-.works-box img {
+.works-phone {
   width: 40%;
 }
 .steps {
@@ -302,12 +302,13 @@ cite img {
 }
 .plans {
   background-color: rgb(231, 231, 231);
+  padding: 80px;
 }
 .plan-box {
   background-color: #fff;
   border-radius: 5px;
   width: 90%;
-  margin: 0 5%;
+  margin: 0, 5%;
   box-shadow: 0 2px 2px rgb(241, 240, 240);
 }
 .plan-box div {
@@ -338,6 +339,9 @@ cite img {
 .contact-form {
   width: 60%;
   margin: 0 auto;
+}
+.forms {
+  padding: 80px;
 }
 input[type="text"],
 input[type="email"],
@@ -390,16 +394,21 @@ footer {
   float: right;
 }
 
-.fb,.insta,.google{
+.fb,
+.insta,
+.google {
   font-size: 120%;
-  transition:color 0.2s;
+  transition: color 0.2s;
 }
-.fb:active,.fb:hover{
-  color:#1877f2
+.fb:active,
+.fb:hover {
+  color: #1877f2;
 }
-.insta:active,.insta:hover{
-  color:#c32aa3
+.insta:active,
+.insta:hover {
+  color: #c32aa3;
 }
-.google:active,.google:hover{
-  color:#ea4335
+.google:active,
+.google:hover {
+  color: #ea4335;
 }
