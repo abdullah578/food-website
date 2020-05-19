@@ -5,6 +5,10 @@
 
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="resources//css/style.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
     <link
@@ -31,10 +35,10 @@
             class="logo"
           />
           <ul class="nav-list">
-            <li class="nav-item"><a href="#">Food delivery</a></li>
-            <li class="nav-item"><a href="#">How it works</a></li>
-            <li class="nav-item"><a href="#">our cities</a></li>
-            <li class="nav-item"><a href="#">Sign up</a></li>
+            <li class="nav-item"><a href="#features">Food delivery</a></li>
+            <li class="nav-item"><a href="#works">How it works</a></li>
+            <li class="nav-item"><a href="#cities">our cities</a></li>
+            <li class="nav-item"><a href="#sign">Sign up</a></li>
           </ul>
         </div>
       </nav>
@@ -43,11 +47,13 @@
           Goodbye junk food.<br />
           Hello super healthy meals.
         </h1>
-        <a href="#" class="btn btn-full">I’m hungry </a>
-        <a href="#" class="btn btn-transperent">Show me more</a>
+        <a href="#" class="btn btn-full js--scroll-to-sign-up">I’m hungry </a>
+        <a href="#" class="btn btn-transperent js--scroll-to-features"
+          >Show me more</a
+        >
       </div>
     </header>
-    <section class="features_section">
+    <section class="features_section js--waypoint" id="features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food.</h2>
         <p class="omni-text">
@@ -56,7 +62,7 @@
           we’re really good at it, we promise!
         </p>
       </div>
-      <div class="row">
+      <div class="row js--wp-1">
         <div class="col span-1-of-4 box">
           <ion-icon name="refresh-circle-outline" class="icon"></ion-icon>
           <h3>Up to 365 days/year</h3>
@@ -141,14 +147,14 @@
         </li>
       </ul>
     </section>
-    <section class="works">
+    <section class="works" id="works">
       <div class="row"><h2>How it works &mdash; Simple as 1, 2, 3</h2></div>
       <div class="row">
         <div class="col span-1-of-2 works-box">
           <img
             src="resources/img/app-iPhone.png"
             alt="omnifood-iphone"
-            class="works-phone"
+            class="works-phone js--wp-2"
           />
         </div>
         <div class="col span-1-of-2 works-box">
@@ -183,11 +189,11 @@
         </div>
       </div>
     </section>
-    <section class="cities">
+    <section class="cities" id="cities">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
-      <div class="row">
+      <div class="row js--wp-3">
         <div class="col span-1-of-4 box city-info">
           <img src="resources/img/lisbon-3.jpg" alt="lisbon" />
           <h3>Lisbon</h3>
@@ -302,7 +308,7 @@
       </div>
       <div class="row">
         <div class="col span-1-of-3">
-          <div class="plan-box">
+          <div class="plan-box js--wp-4">
             <div class="plan-price">
               <h3>Plan 1:Premium</h3>
               <p>399$ <span>per month</span></p>
@@ -384,7 +390,7 @@
         </div>
       </div>
     </section>
-    <section class="forms">
+    <section class="forms js--sign-up" id="sign">
       <div class="row">
         <h2>
           We're happy to hear from you
@@ -483,14 +489,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
   </body>
 </html>
-
-<!---
-  1. About us
-2. Blog
-3. Press
-4. iOS App
-5. Android App
-
--->

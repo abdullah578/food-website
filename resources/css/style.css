@@ -131,6 +131,7 @@ input[type="submit"]:hover {
   float: right;
   list-style: none;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .nav-item {
   display: inline-block;
@@ -148,6 +149,30 @@ input[type="submit"]:hover {
 .nav-item a:active,
 .nav-item a:hover {
   border-bottom: 2px solid #e67e22;
+}
+.sticky {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 2px #eee;
+  z-index: 9999;
+}
+.sticky .nav-item a:link,
+.sticky .nav-item a:visited {
+  text-decoration: none;
+  color: #555;
+  font-size: 90%;
+  padding: 17px 0;
+}
+.sticky .nav-list {
+  margin: 0;
+}
+.sticky .logo {
+  height: 50px;
+  width: auto;
+  margin: 5px 0;
 }
 .omni-text {
   line-height: 140%;
@@ -411,4 +436,20 @@ footer {
 .google:active,
 .google:hover {
   color: #ea4335;
+}
+
+/*Animate*/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+.js--wp-4 {
+  animation-duration: 1s;
+}
+.js--wp-1.animate__fadeIn,
+.js--wp-2.animate__fadeInUp,
+.js--wp-3.animate__fadeIn {
+  opacity: 1;
 }
