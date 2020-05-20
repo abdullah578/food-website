@@ -75,11 +75,26 @@
     width: 100%;
     margin: 0 0 4% 0;
   }
-  .plan-box{
-    width:100%;
+  .plan-box {
+    width: 100%;
+  }
+  .mobile-nav-icon {
+    display: inline-block;
   }
   .nav-list {
+    float: left;
+    margin: 0 0 0 30px;
     display: none;
+  }
+  .nav-item {
+    display: block;
+  }
+  .nav-item a:hover,
+  .nav-item a:active {
+    border: 0;
+  }
+  .sticky .mobile-nav-icon ion-icon {
+    color: #555;
   }
   .omni-text {
     width: 100%;

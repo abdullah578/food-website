@@ -1,11 +1,19 @@
 $(document).ready(function () {
   /*sticky navigation*/
-  $(".js--waypoint").waypoint(function (direction) {
-    if (direction === "down") {
-      $("nav").addClass("sticky");
-    } else {
-      $("nav").removeClass("sticky");
+  $(".js--waypoint").waypoint(
+    function (direction) {
+      if (direction === "down") {
+        $("nav").addClass("sticky");
+      } else {
+        $("nav").removeClass("sticky");
+      }
+    },
+    {
+      offset: "50%",
     }
+  );
+  $(".js--mobile-nav").click(function () {
+    $(".nav-list").slideToggle(200);
   });
   /**button scroll */
   $(".js--scroll-to-sign-up").click(function () {
